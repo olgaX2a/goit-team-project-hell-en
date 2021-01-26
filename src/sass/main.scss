@@ -1,0 +1,31 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// utils
+@import './utils/colors';
+@import './utils/mixins';
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+// base
+@import './base/common';
+@import './base/container';
+
+// components
+@import './components/button';
+@import './components/logo';
+
+// layouts
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/advantages';
+@import './layouts/problems';
+@import './layouts/scope';
+@import './layouts/programm';
+@import './layouts/teacher';
+@import './layouts/guarantee';
+@import './layouts/feedback';
+@import './layouts/registration';
+@import './layouts/footer';
