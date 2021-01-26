@@ -4,7 +4,6 @@
  */
 
 // utils
-@import './utils/colors';
 @import './utils/mixins';
 @import './utils/variables';
 @import './utils/visually-hidden';
@@ -23,7 +22,8 @@
 @import './layouts/advantages';
 @import './layouts/problems';
 @import './layouts/scope';
-@import './layouts/programm';
+@import './layouts/program';
+@import './layouts/features';
 @import './layouts/teacher';
 @import './layouts/guarantee';
 @import './layouts/feedback';
