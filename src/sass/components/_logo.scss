@@ -1,2 +1,31 @@
 // задать стили логотипу, например с класами logo (для лого в целом)
 // и logo__text--light-theme logo__text--dark-theme (для модификаций)
+.logo {
+  position: relative;
+  display: block;
+  font-family: var(--main-font);
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  color: var(--main-color);
+}
+.logo__icon {
+  width: 13px;
+  height: 19px;
+  fill: #ff6b09;
+}
+.logo-english {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  display: block;
+  width: 100%;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 5px;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}

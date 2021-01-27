@@ -1,0 +1,41 @@
+.hero__title {
+  font-family: var(--main-font);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+
+  margin-bottom: 30px;
+}
+.hero__text {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.08em;
+
+  color: var(--main-color);
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.hero__text.pale {
+  color: var(--secondary-color);
+}
+.hero__text.accent {
+  color: var(--accent-color);
+}
+.hero__left-side {
+    background-image: url("/images/hero/hero-mob.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-top: 30px;
+    margin-bottom: 47px;
+}
+.hero__vector {
+  
+box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+}
