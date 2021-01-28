@@ -1,102 +1,88 @@
 
-
 .scope .container{
 min-width: 320px;
 }
     
 .scope__title{
-font-family: "Montserrat", sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 20px;
-line-height: 1.3;
+@include font(800, 20px, 1.3, $ls: 0.03em);
 text-align: center;
-letter-spacing: 0.03em;
-color: #111518;
 margin-bottom: 30px;
+color: var(--main-color);
 }
 
-.scope-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 50px;
+.scope_list{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding-bottom: 50px;
 }
 
-.scope-list__item{
-    width: 280px;
-    margin: auto;
-    min-height: 280px;
-    background: #FFFFFF;
+.scope_list__item{
+width: 280px;
+min-height: 280px;
+margin: auto;
 box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+background: var(--white-color);
 }
 
-.scope-list__item:not(:last-child){
+.scope_list__item:not(:last-child){
     margin-bottom: 15px;
 }
 
 .scope-link{
+    height: 280px;
     text-decoration: none;  
     display: block;
-    height: 280px;
+    // pointer-events: none;
 }
 
 .scope-link:hover ,
 .scope-link:focus {
-    background-color: #FF6B09;
+    background-color: var(--accent-color);
 }
 
-.scope-list__icon{
-    fill:  #FF6B09;
+.scope_list__icon{
+    fill: var(--accent-color);
 }
 
-.scope-link:hover .scope-list__icon,
-.scope-link:focus .scope-list__icon{
-    fill:#FFFFFF;
+.scope-link:hover .scope_list__icon,
+.scope-link:focus .scope_list__icon{
+    fill: var(--white-color);
 }
 
-.scope-link:hover .scope_list__title__position::after ,
-.scope-link:focus .scope_list__title__position::after {
-    background-color:#FFFFFF ;
+.scope-link:hover .scope_list__title::after ,
+.scope-link:focus .scope_list__title::after {
+    background-color: var(--white-color);
 }
 
 .scope-link:hover .scope_list__title,
 .scope-link:focus .scope_list__title{
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .scope-link:hover .scope_list__description,
 .scope-link:focus .scope_list__description{
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
-.scope-list__box{
+.scope_list__box{
     display: flex;
     justify-content:center ;
     align-items: center;
-
+    
     padding-top: 30px;
     margin-bottom: 20px;
 }
 
 .scope_list__title{  
-font-family: "Montserrat", sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.428;
+@include font(700, 14px, 1.428, $ls: 0.08em);
 text-align: center;
-letter-spacing: 0.08em;
-color: #111518;
 margin-bottom: 42px;
-
+position: relative;
+color: var(--main-color);
 }
 
-.scope_list__title__position{
-    position: relative;
-} 
-
-.scope_list__title__position::after{
+.scope_list__title::after{
     position: absolute;
     display: inline-block;
     content: '';
@@ -105,18 +91,12 @@ margin-bottom: 42px;
     transform: translateX(-50%);
     width: 20px;
     height: 2px;
-    background:  #FF6B09;
+    background: var(--accent-color);
     } 
 
-
 .scope_list__description{
-font-family: "Montserrat", sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 1.666;
+@include font(500, 12px, 1.666, $ls: 0.08em);
 display: block;
 text-align: center;
-letter-spacing: 0.08em;  
-color: #B9B9B9;    
+color: var(--secondary-color);   
 }

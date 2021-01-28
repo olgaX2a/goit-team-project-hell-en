@@ -1,10 +1,10 @@
 
 .problems .container{
+min-width: 320px;
+height: 545px;
 background-image: url('/images/problems/fon-mob.jpg');
 background-repeat: no-repeat;
 background-size: cover;
-min-width: 320px;
-height: 545px;
 }
 
 .problems{
@@ -12,48 +12,35 @@ margin-bottom: 198px;
 }
 
 .problems__title{
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.35;
-    letter-spacing: 0.03em;
+    @include font(800, 20px, 1.35, $ls: 0.03em);
     padding-left: 20px;
     padding-top: 50px;
     margin-bottom: 27px;
-    color: #ffffff;
+    color:var(--white-color);
 }
 
 .span--orang-text{
-    color: #FF6B09;
+    color: var(--accent-color);
     }
 
-    .problems-list{
+    .problems_list{
     width: 280px;
     min-height: 488px; 
     margin: auto;
-    background: #FFFFFF;
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04); 
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    background:var(--white-color); 
     } 
 
- .problems-list__title{
-    font-family:"Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.08em;
-    color: #FF6B09;
+ .problems_list__title{
+    @include font(700, 20px, 1.2, $ls: 0.08em);
     padding-left: 61px;
     padding-top: 10px;
     padding-bottom: 5px;
+    position: relative;
+    color: var(--accent-color);
     }
     
-    .problems-list__position{
-        position: relative;
-    } 
-    
-    .problems-list__position::after{
+    .problems_list__title::after{
         position: absolute;
         display: inline-block;
         content: '';
@@ -61,22 +48,17 @@ margin-bottom: 198px;
         left: 30px;
         width: 20px;
         height: 2px;
-        background:  #FF6B09;
+        background: var(--accent-color);
         } 
-    
-    .problems-exeption{
+
+    .problems_exeption{
     padding-top: 20px;
     }
 
-    .problems-list__text{
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.428;
-    letter-spacing: 0.08em;
+    .problems_list__text{
+    @include font(700, 14px, 1.428, $ls: 0.08em);
     padding-left: 30px;
     display: block;
-    color: #111518;
+    color: var(--main-color);
     }
     
