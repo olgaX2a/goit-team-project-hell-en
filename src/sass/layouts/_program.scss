@@ -16,11 +16,129 @@ padding-top: 50px;
 padding-bottom: 43px;
 }
 
-// .program_svg{
-//     fill: var(--accent-color);
-// }
 
-// .program_list{
-//     padding-left: 88px;
-//     padding-top: 8px;
-// }
+.program_title_semester {
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: #FFFFFF;
+width: 118px;
+height: 28px;
+}
+
+.program_title_study {
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 1.66;
+letter-spacing: 0.08em;
+color:var(--accent-color);
+margin-bottom: 5px;
+margin-top: 8px;
+}
+
+.program_text_study{
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.66;
+letter-spacing: 0.08em;
+color: var(--secondary-color);
+opacity: 0.5;
+
+}
+
+li{
+    list-style: none;
+}
+
+.container_border {
+    width: 12px;
+    height: 1292px;
+    margin-left: 68px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.border {
+    display: block;
+    height: 1136px;
+    width: 1px;
+    border: 1px solid #FFFFFF;
+}
+
+.container_all {
+    display: flex;
+}
+
+ul{
+    list-style-type: none
+}
+
+.program_list {
+    margin-left: 20px;
+}
+
+
+.program_title_semester{
+    position: relative;
+    display: inline-block;
+
+    &:before{
+
+        position: absolute;
+        display: inline-block;
+        content: '';
+        top: 5px;
+        left: -31px;
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        background-color: var(--accent-color);
+    }
+}
+
+.margin{
+    margin-bottom: 40px;
+}
+
+.margin-bottom{
+    margin-bottom: 25px;
+}
+
+.program_border  {
+    color: var(--accent-color);
+}
+
+.big-margin{
+    margin-bottom: 50px;
+}
+
+.program {
+    position: relative;
+    display: block;
+}
+
+.container-image{
+position: absolute;
+// top:0px;
+bottom: -50px;
+right: 0px;
+background-image: url('/images/registration/mob.jpg');
+background-repeat: no-repeat;
+background-size: contain;
+min-width: 120px;
+height: 137px;
+}
+
+
