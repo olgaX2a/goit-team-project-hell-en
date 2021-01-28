@@ -4,9 +4,6 @@
 }
 
 .features_title {
-
-font-family: "Montserrat", sans-serif;
-font-style: normal;
 font-weight: 800;
 font-size: 20px;
 line-height: 1.35;
@@ -17,9 +14,6 @@ max-width: 180px;
 }
 
 .features_border{
-
-font-family: "Montserrat", sans-serif;
-font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.91;
@@ -29,15 +23,12 @@ margin-bottom: 10px;
 }
 
 .features_text{
-
-font-family: "Montserrat", sans-serif;
-font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.43;
 letter-spacing: 0.08em;
 color: var(--main-color);
-width: 216px;
+// width: 216px;
 }
 
 .features_item{
@@ -64,14 +55,3 @@ width: 216px;
 .rezultat{
     padding-bottom: 15px;
 }
-
-// ol {
-//     list-style-type: none; /* Убираем исходные маркеры */
-//     counter-reset:  item; /* Обнуляем счетчик списка */
-//    }
-
-// ol li{
-//     &:before{
-//         content: counter(item) '-'; /* Добавляем к числам скобку */
-//        }
-// }
