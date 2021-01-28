@@ -1,20 +1,25 @@
 
 .problems .container{
 min-width: 320px;
+// height: 545px;
+// background-image: url('/images/problems/fon-mob.jpg');
+// background-repeat: no-repeat;
+// background-size: cover;
+}
+
+.problems{
+padding-top: 50px;    
+margin-bottom: 198px;
 height: 545px;
 background-image: url('/images/problems/fon-mob.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 }
 
-.problems{
-margin-bottom: 198px;
-}
-
 .problems__title{
     @include font(800, 20px, 1.35, $ls: 0.03em);
     padding-left: 20px;
-    padding-top: 50px;
+    // padding-top: 50px;
     margin-bottom: 27px;
     color:var(--white-color);
 }
