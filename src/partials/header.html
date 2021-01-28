@@ -1,23 +1,22 @@
-<!-- названия классов называем по типу header__элемент--модификатор -->
 <header>
     <div class="container">
         <div class="page-header">
             <div class="header__mobile">
-                <a class="logo white list link" lang="en" href="./index.html">Hell
+                <a class="logo list link" lang="en" href="./index.html">Hell
                     <svg class="logo__icon">
                         <use href="./images/sprite.svg#campfire"></use>
                     </svg>
-                    EN<span class="logo-english">Адский английский</span>
+                    EN<span class="logo-english"><span class="logo-english-accent">Адский</span> английский</span>
                 </a>
                 <button tape="button" class="header__menu-button" width="40" height="40" aria-expanded="false"
                     aria-controls="menu-container" data-menu-button>
                     <svg class="header__menu-button--icon" aria-label="Переключатель мобильного меню">
-                        <use class="header__menu-button--icon-menu" href="./images/sprite.svg#menu"></use>
-                        <use class="header__menu-button--icon-cross"href="./images/sprite.svg#cross"></use>
+                        <use class="header__menu-button--icon-cross" width="20" height="20" href="./images/sprite.svg#cross"></use>
+                        <use class="header__menu-button--icon-menu" width="20" height="12" href="./images/sprite.svg#menu"></use>
                     </svg>
-                </button>
-            </div>
-            <div class="menu-container" id="menu-container" data-menu>
+                </button> 
+            </div> 
+             <div class="menu-container" id="menu-container" data-menu>
                 <nav class="header__site-nav">
                     <ul class="header__site-nav list">
                         <li class="header__site-nav--item"><a class="header__site-nav--link link" href="">Программа обучения</a></li>
@@ -26,8 +25,10 @@
                         <li class="header__site-nav--item"><a class="header__site-nav--link link" href="">Контакты</a></li>
                     </ul>
                 </nav>
-                <button type="button" class="contact__btn--light-theme" data-modal-open>Консультация по телефону</button>
+                <button type="button" class="contact__btn--light-theme">Консультация по телефону</button>
             </div>
+            
+            
         </div>
     </div>
 </header>
