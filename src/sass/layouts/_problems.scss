@@ -1,0 +1,82 @@
+
+.problems .container{
+background-image: url('/images/problems/fon-mob.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+min-width: 320px;
+height: 545px;
+}
+
+.problems{
+margin-bottom: 198px;
+}
+
+.problems__title{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.35;
+    letter-spacing: 0.03em;
+    padding-left: 20px;
+    padding-top: 50px;
+    margin-bottom: 27px;
+    color: #ffffff;
+}
+
+.span--orang-text{
+    color: #FF6B09;
+    }
+
+    .problems-list{
+    width: 280px;
+    min-height: 488px; 
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04); 
+    } 
+
+ .problems-list__title{
+    font-family:"Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    color: #FF6B09;
+    padding-left: 61px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    }
+    
+    .problems-list__position{
+        position: relative;
+    } 
+    
+    .problems-list__position::after{
+        position: absolute;
+        display: inline-block;
+        content: '';
+        bottom: 17px;
+        left: 30px;
+        width: 20px;
+        height: 2px;
+        background:  #FF6B09;
+        } 
+    
+    .problems-exeption{
+    padding-top: 20px;
+    }
+
+    .problems-list__text{
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.428;
+    letter-spacing: 0.08em;
+    padding-left: 30px;
+    display: block;
+    color: #111518;
+    }
+    
