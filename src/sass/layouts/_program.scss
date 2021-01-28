@@ -2,6 +2,10 @@
     background-color: var(--main-color);
 }
 
+.container_all{
+    height: 1272px;
+}
+
 .program_title{
     
 font-family: var(--main-font);
@@ -27,8 +31,6 @@ line-height: 1.71;
 letter-spacing: 0.08em;
 text-transform: uppercase;
 color: #FFFFFF;
-width: 118px;
-height: 28px;
 }
 
 .program_title_study {
@@ -41,10 +43,9 @@ line-height: 1.66;
 letter-spacing: 0.08em;
 color:var(--accent-color);
 margin-bottom: 5px;
-margin-top: 8px;
 }
 
-.program_text_study{
+.program_text{
 font-family: Montserrat;
 font-style: normal;
 font-weight: 500;
@@ -53,28 +54,41 @@ line-height: 1.66;
 letter-spacing: 0.08em;
 color: var(--secondary-color);
 opacity: 0.5;
-
 }
 
-li{
-    list-style: none;
+
+.program_item{
+    margin-bottom: 8px;
+
+    // &:not(:last-child) {
+    //     margin-bottom: 8px;
+    // }
+    
 }
+
+.program_item--indent{
+    margin-bottom: 0px;
+}
+
+.program_text--margin {
+    margin-bottom: 8px;
+}
+
 
 .container_border {
     width: 12px;
     height: 1292px;
-    margin-left: 68px;
+    margin-left: 74px;
     padding-top: 5px;
     padding-bottom: 5px;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
 }
 
 .border {
     display: block;
-    height: 1136px;
-    width: 1px;
-    border: 1px solid #FFFFFF;
+    height: 1103px;
+    border-left: 1px solid #FFFFFF;
 }
 
 .container_all {
@@ -86,13 +100,22 @@ ul{
 }
 
 .program_list {
+    display: flex;
+    // height: 289px;
+    flex-wrap:wrap;
     margin-left: 20px;
+    // margin-bottom: 32px;
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
 }
 
 
 .program_title_semester{
     position: relative;
     display: inline-block;
+    margin-bottom: 5px;
 
     &:before{
 
@@ -100,28 +123,17 @@ ul{
         display: inline-block;
         content: '';
         top: 5px;
-        left: -31px;
+        left: -30px;
         width: 12px;
         height: 12px;
         border-radius: 100%;
         background-color: var(--accent-color);
     }
-}
 
-.margin{
-    margin-bottom: 40px;
-}
-
-.margin-bottom{
-    margin-bottom: 25px;
 }
 
 .program_border  {
     color: var(--accent-color);
-}
-
-.big-margin{
-    margin-bottom: 50px;
 }
 
 .program {
@@ -141,4 +153,12 @@ min-width: 120px;
 height: 137px;
 }
 
+.program_text--margin-bootom{
+    margin-top: 20px;
+    margin-bottom: 55px;
+    max-width: 67px;
+}
 
+.program_title_semester--margin{
+    margin-bottom: 25px;
+}

@@ -64,3 +64,14 @@ width: 216px;
 .rezultat{
     padding-bottom: 15px;
 }
+
+// ol {
+//     list-style-type: none; /* Убираем исходные маркеры */
+//     counter-reset:  item; /* Обнуляем счетчик списка */
+//    }
+
+// ol li{
+//     &:before{
+//         content: counter(item) '-'; /* Добавляем к числам скобку */
+//        }
+// }
