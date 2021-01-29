@@ -90,4 +90,29 @@ body {
 .span--orange-text {
   color: #ff6b09;
 }
+
+.registration {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.registration__title {
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.357;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.registration__text {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #ffffff;
+}
 /*# sourceMappingURL=main.css.map */

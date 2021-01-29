@@ -1,0 +1,17 @@
+.registration {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__title {
+    margin-bottom: 30px;
+    @include font(800, 14px, 1.357, $ls: 0.03em);
+    text-align: center;
+    color: #ffffff;
+  }
+  &__text {
+    margin-bottom: 30px;
+    @include font(600, 12px, 1.25);
+    text-align: center;
+    color: #ffffff;
+  }
+}
