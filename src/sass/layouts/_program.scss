@@ -76,6 +76,7 @@ padding-top: 50px;
 
 @media screen and (min-width:768px) {
     padding-top: 60px;
+    padding-bottom: 50px;
 }
 
 @media screen and (min-width:1366px) {
@@ -214,7 +215,7 @@ opacity: 0.5;
     border-left: 1px solid #FFFFFF;
 
     @media screen and (min-width:768px) {
-      height: 616px;
+      height: 666px;
     }
     
     @media screen and (min-width: 1366px) { 
@@ -229,6 +230,10 @@ opacity: 0.5;
 .container_all {
 
     display: flex;
+
+      @media screen and (min-width:768px) {
+    //   padding-left: 63px;
+  }  
 
     @media screen and (min-width:1366px) {
         display: block;
@@ -361,7 +366,7 @@ height: 137px;
     // bottom: 130px;
     bottom: 0px;
     // background-size: 384px 280px;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 }
 
 @media screen and (min-width:1366px) {
@@ -374,10 +379,23 @@ height: 137px;
     bottom: -150px;
     right: 0px;
     left: 0px;
-    background-size: contain;
-    // position: fixed;
+    background-size: cover;
 }
+
+// @media screen and (min-width:1680px) {
+
+//     background-image: url('/images/registration/desk.jpg');
+//     width: 672px;
+//     // width: 510px;
+//     height: 502px;
+//     margin-bottom: 0px;
+//     bottom: -150px;
+//     right: 0px;
+//     left: 0px;
+//     background-size: cover;
+// }
 }
+
 
 .program_text--margin-bootom{
     margin-top: 20px;
@@ -409,7 +427,17 @@ height: 137px;
     background-image: url(../images/registration/tab2x.jpg);
    }
    }
-  
+ 
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1366px),
+   screen and (min-resolution: 192dpi) and (min-width: 1366px) ,
+   screen and (min-resolution: 2dppx) and (min-width: 1366px) {
+
+    .container-image {
+
+    background-image: url(../images/registration/desk2x.jpg);
+   }
+   }  
+
 
    @media screen and (min-width:768px) {
     .program_text--desk-margin {
