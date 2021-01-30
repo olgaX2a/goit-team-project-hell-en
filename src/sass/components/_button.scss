@@ -1,5 +1,5 @@
 // задать стили кнопкам с классами contact__btn--light-theme и contact__btn--dark-theme
-.contact__btn--light-theme {
+.contact__btn--light-theme {  
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 12px;
@@ -15,7 +15,7 @@
   margin: 0 auto;
   border: 2px solid #ff6b09;
 }
-.contact__btn--dark-theme {
+.contact__btn--dark-theme {  
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 12px;
