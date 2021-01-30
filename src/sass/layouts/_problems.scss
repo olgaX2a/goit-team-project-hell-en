@@ -1,49 +1,188 @@
 
-// .problems .container{
-// min-width: 320px;
-// height: 545px;
-// background-image: url('/images/problems/fon-mob.jpg');
-// background-repeat: no-repeat;
-// background-size: cover;
-// }
-
 .problems{
+height: 545px;
 padding-top: 50px;    
 margin-bottom: 198px;
-height: 545px;
 background-image: url('/images/problems/fon-mob.jpg');
 background-repeat: no-repeat;
 background-size: cover;
+
+
+@media screen and (min-width: 768px){
+height: 340px; 
+margin-bottom: 202px;
+background-image: url('/images/problems/fon-tablet.jpg');
+
+}
+
+@media screen and (min-width: 1366px) {
+    height: 560px; 
+    margin-bottom: 280px;
+    background-image:
+    url('/images/problems/fon-desktop.jpg');
+}
+
 }
 
 .problems__title{
     @include font(800, 20px, 1.35, $ls: 0.03em);
-    // padding-left: 20px;
-    // padding-top: 50px;
     padding-bottom: 27px;
     color:var(--white-color);
+
+    @media screen and (min-width: 768px){
+    @include font(800, 26px, 1.307, $ls: 0.03em);
+    padding-bottom: 25px;
+    }
+
+    @media screen and (min-width: 1366px) {
+    @include font(800, 46px, 1.304, $ls: 0.03em);
+    padding-bottom: 70px;
+    }
+
 }
+
+
+// .problem-fire{
+// @media screen and (max-width: 1365px) {
+// display: none;
+// }
+// }
+
+
+// .problem-fire{
+//     @media screen and (min-width: 1366px) {
+//     width: 399px;
+//     height: 472px;
+//     background-image:url('/images/problems/fon-fire.jpg') ;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+    
+//     z-index:1;
+//     position: absolute;
+//     bottom: 0px;
+//     right: 0px;
+//     }
+//     }
+
+.problem-fire-svg{
+    @media screen and (max-width: 1365px) {
+    display: none;
+    }
+    }
+
+.problem-fire-svg{
+    @media screen and (min-width: 1366px) {
+    position: absolute;
+    // z-index:0;
+    top: 47%;
+    transform: translateY(-47%);
+     right:0px;
+    }
+    }
+
+.fire__icon{
+fill: var(--teacher-color);
+}
+
 
 .span--orang-text{
     color: var(--accent-color);
     }
 
+.problems-box{
+    @media screen and (min-width: 768px){
+        // outline: 2px solid green;
+        width: 688px; ;
+        height: 303px;
+        padding-top: 30px;
+        padding-bottom: 26px;
+        padding-left: 96px;
+        background:var(--white-color); 
+        }
+
+
+        @media screen and (min-width: 1366px){
+            // outline: 2px solid red;
+            width: 1314px;
+            height: 362px; 
+            padding-top: 70px;
+            padding-bottom: 62px;
+            padding-left: 114px;
+            background:var(--white-color);
+            position: absolute;
+            z-index:1; 
+            }
+
+}
+
     .problems_list{
-    // width: 280px;
-    // padding-left: 30px;
-    min-height: 488px; 
-    margin: auto;
+    height: 488px; 
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     background:var(--white-color); 
+   
+    @media screen and (min-width: 768px){
+        width: 549px;
+        height: 247px; 
+        display: flex;
+        flex-wrap: wrap;
+
+        // outline: 2px solid red;
+        }
+
+    @media screen and (min-width: 1366px){
+        width: 1188px;
+        height: 230px; 
+        position: absolute;
+        z-index:1;
+
+    }
+
+
     } 
+
+.problems_list__item {
+
+    @media screen and (min-width: 768px) and (max-width: 1365px){ 
+        width: 50%;}
+
+    @media screen and (min-width: 1366px){ 
+        width:33.3333%;}
+}  
+
+.problems_list__item:nth-child(2n + 1) {
+    @media screen and (min-width: 768px) and (max-width:1365px){ 
+        padding-right: 22px;
+    }
+
+        .problems_list__item{
+            @media screen  and (min-width:1366px){ 
+                padding-right: 40px;;
+            }
+        }
+
+   
+  }
+
+
 
  .problems_list__title{
     @include font(700, 20px, 1.2, $ls: 0.08em);
     padding-left: 61px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    
     position: relative;
     color: var(--accent-color);
+
+    @media screen and (max-width: 767px){
+    padding-top: 10px;
+    margin-bottom: 5px;
+    }
+
+
+
+    @media screen and (min-width: 1366px){
+    @include font(700, 20px, 1.65, $ls: 0.08em);
+    }
+
     }
     
     .problems_list__title::after{
@@ -58,13 +197,28 @@ background-size: cover;
         } 
 
     .problems_exeption{
-    padding-top: 20px;
-    }
+        @media screen and (max-width: 767px){
+        padding-top: 20px;
+        }
+}
 
     .problems_list__text{
     @include font(700, 14px, 1.428, $ls: 0.08em);
     padding-left: 30px;
     display: block;
     color: var(--main-color);
+    // outline: 2px solid teal;
+
+
+    @media screen and (min-width: 768px){
+    @include font(700, 14px, 1.714, $ls: 0.08em); 
+    // text-align: start;
+    //    max-width: 236px;
+    }
+   
+    @media screen and (min-width: 1366px){
+    @include font(700, 20px, 1.4, $ls: 0.08em);
+    // max-width: 336px;
+    }
     }
     
