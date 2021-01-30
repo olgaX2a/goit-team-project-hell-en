@@ -1,7 +1,6 @@
 .page-header {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+  padding-top: 24px;
+ }
 .header__mobile {
   display: flex;
   justify-content: space-between;
@@ -109,6 +108,7 @@
 }
 @media screen and (min-width: 768px) {
   .page-header {
+    padding-top: 40px;
     display: flex;
     align-items: center;
   }
@@ -127,6 +127,9 @@
  }
 }
 @media screen and (min-width: 1366px) {
+  .page-header {
+    padding-top: 34px;
+  }
   .header__menu-button {
     display: none;
   }

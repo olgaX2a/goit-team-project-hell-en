@@ -1,3 +1,7 @@
+.advantages__section {
+  padding-top: 24px;
+  padding-bottom: 50px;
+}
 .advantages__item {
   position: relative;
   display: flex;
@@ -44,9 +48,9 @@
   margin-left: 10px;
 }
 @media screen and (min-width: 768px) {
-  .advantages-section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  .advantages__section {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .advantages__list {
     display: flex;
@@ -69,7 +73,7 @@
   }
 }
 @media screen and (min-width: 1366px) {
-  .advantages-section {
+  .advantages__section {
     padding-top: 97px;
     padding-bottom: 130px;
   }
