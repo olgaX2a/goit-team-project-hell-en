@@ -1,62 +1,109 @@
 <!-- названия классов называем по типу teacher__элемент--модификатор -->
-<section class="teacher__container">
-    <div class="container">
-        <h1 class="teacher__main-heading">Преподаватель</h1>
+<section class="teacher__container" id="teacher">
+  <div class="container">
+    <h1 class="teacher__main-heading">Преподаватель</h1>
     <div class="teacher__columns">
-        <div class="teacher__left-side">
-            <picture >
-                <source 
-                    srcset="../src/images/teacher/teacher-desktop.webp 1x, ../src/images/teacher/teacher-desktop@2x.webp 2x"
-                    type="image/webp"
-                    media="(min-width: 1344px)"/>
-                <source 
-                srcset="../src/images/teacher/teacher-tab.webp 1x, ../src/images/teacher/teacher-tab@2x.webp 2x"
-                    type="image/webp"
-                    media="(min-width: 768px)"/>
-                <source 
-                    srcset="../src/images/teacher/teacher-mob.webp 1x, ../src/images/teacher/teacher-mob@2x.webp 2x"
-                    type="image/webp"
-                    media="(min-width: 320px)"/>
-                <source 
-                    srcset="../src/images/teacher/teacher-desktop.jpg 1x, ../src/images/teacher/teacher-desktop@2x.jpg 2x"
-                    media="(min-width: 1344px)"/>
-                <source 
-                srcset="../src/images/teacher/teacher-tab.jpg 1x, ../src/images/teacher/teacher-tab@2x.jpg 2x"
-                    media="(min-width: 768px)"/> 
-                <source 
-                    srcset="../src/images/teacher/teacher-mob.jpg 1x, ../src/images/teacher/teacher-mob@2x.jpg 2x"
-                    media="(min-width: 320px)"/> 
-                <img class="teacher__photo"
-                    src="../src/images/teacher/teacher-mob.jpg"
-                    alt="Фотография Елены Моревой"/>
-            </picture>
-        </div>
-        <div class="teacher__right-side">
-            <h2 class="teacher__name">Елена Морева</h2>
-            <ul class="list teacher__achievements">
-                <li class="teacher__achievements-item">
-                    <p class="teacher__achievements-description">Опыт подготовки учеников к ВНО - 6 лет</p>
-                </li>
-                <li class="teacher__achievements-item">
-                    <p class="teacher__achievements-description">Собственный результат сдачи ВНО - 197 баллов 2 года подряд</p>
-                </li>
-                <li class="teacher__achievements-item">
-                    <p class="teacher__achievements-description">Сдала на отлично международный аналог ВНО - Кембриджский PET (Preliminary English Test)</p>
-                </li>
-            </ul>
-            <ul class="list teacher__education">
-                <li class="teacher__education-item">
-                    <p class="teacher__education-description">Высшее образование получила в Институте международных отношений НАУ по специальности переводчик-аналитик.</p>
-                </li>
-                <li class="teacher__education-item">
-                    <p class="teacher__education-description">В свободное время проходит курсы от лучших университетов мира по эффективному преподаванию и методикам написания сочинений.</p>
-                </li>
-                <li class="teacher__education-item">
-                    <p class="teacher__education-description">В числе пройденных: English Grammar and Essay Writing (Berkeley), English Grammar&Style (The University of Queesland), How to Write an Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching and Learning (University of Houston).</p>
-                </li>
-            </ul>
-            <a class="span--orange-text teacher-link" href="">Cambrige English Entry Level Certificate</a>
-        </div>
+      <div class="teacher__left-side">
+        <picture>
+          <source
+            srcset="
+              ../src/images/teacher/teacher-desktop.webp    1x,
+              ../src/images/teacher/teacher-desktop@2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 1366px)"
+          />
+          <source
+            srcset="
+              ../src/images/teacher/teacher-tab.webp    1x,
+              ../src/images/teacher/teacher-tab@2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../src/images/teacher/teacher-mob.webp    1x,
+              ../src/images/teacher/teacher-mob@2x.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 320px)"
+          />
+          <source
+            srcset="
+              ../src/images/teacher/teacher-desktop.jpg    1x,
+              ../src/images/teacher/teacher-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1366px)"
+          />
+          <source
+            srcset="
+              ../src/images/teacher/teacher-tab.jpg    1x,
+              ../src/images/teacher/teacher-tab@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../src/images/teacher/teacher-mob.jpg    1x,
+              ../src/images/teacher/teacher-mob@2x.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            class="teacher__photo"
+            src="../src/images/teacher/teacher-mob.jpg"
+            alt="Фотография Елены Моревой"
+          />
+        </picture>
+      </div>
+      <div class="teacher__right-side">
+        <h2 class="teacher__name">Елена Морева</h2>
+        <ul class="list teacher__achievements">
+          <li class="teacher__achievements-item">
+            <p class="teacher__achievements-description">
+              Опыт подготовки учеников к ВНО - 6 лет
+            </p>
+          </li>
+          <li class="teacher__achievements-item">
+            <p class="teacher__achievements-description">
+              Собственный результат сдачи ВНО - 197 баллов 2 года подряд
+            </p>
+          </li>
+          <li class="teacher__achievements-item">
+            <p class="teacher__achievements-description">
+              Сдала на отлично международный аналог ВНО - Кембриджский PET
+              (Preliminary English Test)
+            </p>
+          </li>
+        </ul>
+        <ul class="list teacher__education">
+          <li class="teacher__education-item">
+            <p class="teacher__education-description">
+              Высшее образование получила в Институте международных отношений
+              НАУ по специальности переводчик-аналитик.
+            </p>
+          </li>
+          <li class="teacher__education-item">
+            <p class="teacher__education-description">
+              В свободное время проходит курсы от лучших университетов мира по
+              эффективному преподаванию и методикам написания сочинений.
+            </p>
+          </li>
+          <li class="teacher__education-item">
+            <p class="teacher__education-description">
+              В числе пройденных: English Grammar and Essay Writing (Berkeley),
+              English Grammar&Style (The University of Queesland), How to Write
+              an Essay (Berkeley), Academic and Business Writing (Berkeley), The
+              Art of Teaching (GEMS education), Powerful Tools for Teaching and
+              Learning (University of Houston).
+            </p>
+          </li>
+        </ul>
+        <a class="span--orange-text teacher-link" href=""
+          >Cambrige English Entry Level Certificate</a
+        >
+      </div>
     </div>
-    </div>
+  </div>
 </section>
