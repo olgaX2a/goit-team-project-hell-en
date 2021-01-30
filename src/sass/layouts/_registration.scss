@@ -1,0 +1,123 @@
+.registration {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--main-color);
+  background-image: url('/images/registration/registration-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    screen and (min-resolution: 192dpi) and (min-width: 320px),
+    screen and (min-resolution: 2dppx) and (min-width: 320px) {
+    background-image: url('/images/registration/registration-mobile@2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 70px;
+    background-image: url('/images/registration/registration-tablet.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/images/registration/registration-tablet@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding-top: 100px;
+    padding-bottom: 62px;
+    background-image: url('/images/registration/registration-desktop.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('/images/registration/registration-desktop@2x.png');
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @include font(800, 14px, 1.357, $ls: 0.03em);
+    text-align: center;
+    color: #ffffff;
+
+    @media screen and (min-width: 768px) {
+      @include font(800, 26px, 1.308, $ls: 0.03em);
+    }
+
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 50px;
+      @include font(800, 46px, 1.304, $ls: 0.03em);
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    @include font(600, 12px, 1.25);
+    text-align: center;
+    color: #ffffff;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+      @include font(600, 14px, 1.214);
+    }
+
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 56px;
+      @include font(600, 30px, 1.233);
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__field:first-child {
+    margin-bottom: 20px;
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__field:last-child {
+    margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__input {
+    min-width: 259px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 28px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    color: #ffffff;
+
+    @media screen and (min-width: 768px) {
+      min-width: 390px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      min-width: 478px;
+      padding-top: 23px;
+      padding-bottom: 23px;
+      padding-left: 40px;
+    }
+
+    &::placeholder {
+      @include font(600, 14px, 1.214);
+      color: #ffffff;
+      @media screen and (min-width: 1366px) {
+        @include font(600, 20px, 1.2);
+      }
+    }
+  }
+}
