@@ -1,6 +1,6 @@
 .page-header {
   padding-top: 24px;
- }
+}
 .header__mobile {
   display: flex;
   justify-content: space-between;
@@ -63,7 +63,6 @@
   letter-spacing: 0.03em;
 
   color: #ffffff;
-  
 }
 .header__site-nav--link.current {
   color: var(--accent-color);
@@ -121,10 +120,10 @@
   }
   .header__site-nav-list {
     margin-left: 218px;
-   margin-right: 218px;
+    margin-right: 218px;
     text-align: left;
     margin-top: 72px;
- }
+  }
 }
 @media screen and (min-width: 1366px) {
   .page-header {
@@ -147,13 +146,11 @@
     margin-left: 144px;
     margin-right: 60px;
   }
-    .header__site-nav-list {
+  .header__site-nav-list {
     display: flex;
     margin-left: 0px;
     margin-right: 0;
     margin-top: 0;
-    
-    
   }
   .header__site-nav--item {
     margin-right: 40px;
