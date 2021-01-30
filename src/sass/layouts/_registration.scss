@@ -24,6 +24,8 @@
   }
 
   @media screen and (min-width: 1366px) {
+    padding-top: 100px;
+    padding-bottom: 62px;
     // background-image: url('/images/registration/registration-desktop.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -42,6 +44,11 @@
     @media screen and (min-width: 768px) {
       @include font(800, 26px, 1.308, $ls: 0.03em);
     }
+
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 50px;
+      @include font(800, 46px, 1.304, $ls: 0.03em);
+    }
   }
 
   &__text {
@@ -54,6 +61,11 @@
       margin-bottom: 40px;
       @include font(600, 14px, 1.214);
     }
+
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 56px;
+      @include font(600, 30px, 1.233);
+    }
   }
 
   &__form {
@@ -64,12 +76,18 @@
 
   &__field:first-child {
     margin-bottom: 20px;
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 30px;
+    }
   }
 
   &__field:last-child {
     margin-bottom: 50px;
     @media screen and (min-width: 768px) {
       margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 80px;
     }
   }
 
@@ -87,9 +105,19 @@
       min-width: 390px;
     }
 
+    @media screen and (min-width: 1366px) {
+      min-width: 478px;
+      padding-top: 23px;
+      padding-bottom: 23px;
+      padding-left: 40px;
+    }
+
     &::placeholder {
       @include font(600, 14px, 1.214);
       color: #ffffff;
+      @media screen and (min-width: 1366px) {
+        @include font(600, 20px, 1.2);
+      }
     }
   }
 
@@ -110,11 +138,11 @@
     margin: 0 auto;
     border: 2px solid #ff6b09;
   }
-  // @media screen and (min-width: 1366px) {
-  //       .contact__btn--dark-theme {
-  //     // min-width: 354px;
-  //     font-size: 14px;
-  //     line-height: 1.21;
-  //   }
-  // }
+  @media screen and (min-width: 1366px) {
+    .contact__btn--dark-theme {
+      min-width: 354px;
+      font-size: 14px;
+      line-height: 1.21;
+    }
+  }
 }
