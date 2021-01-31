@@ -1,3 +1,17 @@
+@media screen and (min-width:1366px) {
+
+    .program_item-padding {
+
+        position: relative;
+        z-index:100;
+        // padding-left: 15px;
+        padding-bottom: 242px;
+        background-color: var(--main-color);
+        // margin-left: 15px;
+        // padding-left: 15px;
+    }
+}
+
 @media screen and (min-width:768px) {
     
     .container_study{
@@ -54,6 +68,7 @@
 
 .program{
     background-color: var(--main-color);
+    // max-width: 1680px;
 
     @media screen and (min-width:1366px) {
 
@@ -69,6 +84,10 @@
             // outline: 1px red solid;
         }
     }
+
+    // @media screen and (max-width:1680px) {
+    //     max-width: 1680px;
+    // }
 }
 
 .program {
@@ -81,6 +100,7 @@ padding-top: 50px;
 
 @media screen and (min-width:1366px) {
     padding-top: 120px;
+    padding-bottom: 0px;
 }
 }
 
@@ -377,12 +397,16 @@ height: 137px;
     // max-width: 510px;
     height: 502px;
     margin-bottom: 0px;
-    bottom: -150px;
+    bottom: -140px;
     right: 0px;
     left: 0px;
-    background-size: cover;
+    background-size: cover;   
 }
 
+@media screen and (min-width:1680px) {
+    // max-width: 1680px;
+    // width: 672px;
+}
 }
 
 
