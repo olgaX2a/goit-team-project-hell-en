@@ -1,5 +1,6 @@
 .feedback {
     padding-bottom: 54px;
+    padding-top: 130px;
   }
   .feedback__heading {
     margin-bottom: 20px;
@@ -238,10 +239,10 @@
     }
     .bottom-nav {
         width: 558px;
-        height: 71px;
+        height: 60px;
     }
     .photo-nav {
-        height: 71px;
+        height: 60px;
     }
     .photo-nav:last-child {
         margin-right: 0;
@@ -254,7 +255,6 @@
     }
     .feedback__list-item {
         display: flex;
-        // flex-direction: column;
         padding-top: 40px;
         padding-right: 40px;
         padding-bottom: 40px;
@@ -272,11 +272,13 @@
         height: 150px;
     }
     .girl__name {
+        text-align: left;
         margin-bottom: 20px;
         font-size: 20px;
     }
     .girl__study {
         margin-bottom: 20px;
+        text-align: left;
     }
     .girl__feedback {
         text-align: left;
