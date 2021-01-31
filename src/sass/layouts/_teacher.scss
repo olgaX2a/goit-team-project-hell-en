@@ -112,8 +112,6 @@
 @media screen and (min-width: 1366px) {
     .teacher__container {
         padding-top: 329px;
-        padding-right: 157px;
-        padding-left: 157px;
         margin-bottom: 130px;
     }
     .teacher__main-heading {
@@ -131,12 +129,12 @@
         width: 530px;
     }
     .teacher__name {
-        padding-bottom: 30px;
+        padding-bottom: 15px;
         font-size: 30px;
+        margin-bottom: 30px;
     }
     .teacher__achievements {
         margin-bottom: 59px;
-        padding-top: 30px;
     }
     
     .teacher__list-style {
