@@ -1,224 +1,231 @@
 
+
 .problems{
-height: 545px;
-padding-top: 50px;    
-margin-bottom: 198px;
-background-image: url('/images/problems/fon-mob.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-
-
-@media screen and (min-width: 768px){
-height: 340px; 
-margin-bottom: 202px;
-background-image: url('/images/problems/fon-tablet.jpg');
-
-}
-
-@media screen and (min-width: 1366px) {
-    height: 560px; 
-    margin-bottom: 280px;
-    background-image:
-    url('/images/problems/fon-desktop.jpg');
-}
-
-}
-
-.problems__title{
-    @include font(800, 20px, 1.35, $ls: 0.03em);
-    padding-bottom: 27px;
-    color:var(--white-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: var( --main-color);
 
     @media screen and (min-width: 768px){
-    @include font(800, 26px, 1.307, $ls: 0.03em);
-    padding-bottom: 25px;
+    padding-top: 60px;
+    padding-bottom: 50px;
     }
-
-    @media screen and (min-width: 1366px) {
-    @include font(800, 46px, 1.304, $ls: 0.03em);
-    padding-bottom: 70px;
-    }
-
-}
-
-
-// .problem-fire{
-// @media screen and (max-width: 1365px) {
-// display: none;
-// }
-// }
-
-
-// .problem-fire{
-//     @media screen and (min-width: 1366px) {
-//     width: 399px;
-//     height: 472px;
-//     background-image:url('/images/problems/fon-fire.jpg') ;
-//     background-repeat: no-repeat;
-//     background-size: cover;
     
-//     z-index:1;
-//     position: absolute;
-//     bottom: 0px;
-//     right: 0px;
-//     }
-//     }
 
-.problem-fire-svg{
-    @media screen and (max-width: 1365px) {
-    display: none;
-    }
-    }
-
-.problem-fire-svg{
     @media screen and (min-width: 1366px) {
-    position: absolute;
-    // z-index:0;
-    top: 47%;
-    transform: translateY(-47%);
-     right:0px;
+        padding-top: 100px;
+        padding-bottom: 130px;
     }
     }
+    
 
-.fire__icon{
-fill: var(--teacher-color);
+ .problems .container{
+     display: block;
+     position: relative;
 }
 
+    .problems::after{
+        position: absolute;
+        content: "";
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+        height: 198px;
+       
+        background: var(--white-color);
 
-.span--orang-text{
-    color: var(--accent-color);
-    }
 
-.problems-box{
-    @media screen and (min-width: 768px){
-        // outline: 2px solid green;
-        width: 688px; ;
-        height: 303px;
-        padding-top: 30px;
-        padding-bottom: 26px;
-        padding-left: 96px;
-        background:var(--white-color); 
+
+        @media screen and (min-width: 768px){
+            height: 201px;
         }
-
 
         @media screen and (min-width: 1366px){
-            // outline: 2px solid red;
+            height: 280px;
+        }
+
+    }
+
+    .problems__title{
+        @include font(800, 20px, 1.35, $ls: 0.03em);
+        padding-bottom: 27px;
+        color:var(--white-color);
+    
+        @media screen and (min-width: 768px){
+        @include font(800, 26px, 1.307, $ls: 0.03em);
+        padding-bottom: 25px;
+        }
+    
+        @media screen and (min-width: 1366px) {
+        @include font(800, 46px, 1.304, $ls: 0.03em);
+        padding-bottom: 70px;
+        }
+        }
+    
+    
+    .fon-fire{
+        @media screen and (min-width: 1366px) {
+            width: 455px;
+            height: 472px;
+            bottom: 150px;
+            left:1120px;
+            position: absolute;
+            background-image:url('/images/problems/fon-fire.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+    }
+    
+    
+    .span--orang-text{
+        color: var(--accent-color);
+        }
+    
+    
+        .problems_list{
+        height: 488px; 
+        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+        background:var(--white-color);
+        position: relative;
+        z-index:100;
+
+        @media screen and (min-width: 768px){
+            width: 688px;
+            height: 303px; 
+            display: flex;
+            flex-wrap: wrap;
+    
+            padding-top: 30px;
+            padding-bottom: 26px;
+            padding-left: 96px;
+            }
+    
+        @media screen and (min-width: 1366px){
             width: 1314px;
             height: 362px; 
+    
             padding-top: 70px;
             padding-bottom: 62px;
-            padding-left: 114px;
-            background:var(--white-color);
-            position: absolute;
-            z-index:1; 
-            }
-
-}
-
-    .problems_list{
-    height: 488px; 
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-    background:var(--white-color); 
-   
-    @media screen and (min-width: 768px){
-        width: 549px;
-        height: 247px; 
-        display: flex;
-        flex-wrap: wrap;
-
-        // outline: 2px solid red;
+            padding-left: 113px;
+         
+            
         }
-
-    @media screen and (min-width: 1366px){
-        width: 1188px;
-        height: 230px; 
-        position: absolute;
-        z-index:1;
-
-    }
-
-
-    } 
-
-.problems_list__item {
-
-    @media screen and (min-width: 768px) and (max-width: 1365px){ 
-        width: 50%;}
-
-    @media screen and (min-width: 1366px){ 
-        width:33.3333%;}
-}  
-
-.problems_list__item:nth-child(2n + 1) {
-    @media screen and (min-width: 768px) and (max-width:1365px){ 
-        padding-right: 22px;
-    }
-
-        .problems_list__item{
-            @media screen  and (min-width:1366px){ 
-                padding-right: 40px;;
-            }
-        }
-
-   
-  }
-
-
-
- .problems_list__title{
-    @include font(700, 20px, 1.2, $ls: 0.08em);
-    padding-left: 61px;
-    
-    position: relative;
-    color: var(--accent-color);
-
-    @media screen and (max-width: 767px){
-    padding-top: 10px;
-    margin-bottom: 5px;
-    }
-
-
-
-    @media screen and (min-width: 1366px){
-    @include font(700, 20px, 1.65, $ls: 0.08em);
-    }
-
-    }
-    
-    .problems_list__title::after{
-        position: absolute;
-        display: inline-block;
-        content: '';
-        bottom: 17px;
-        left: 30px;
-        width: 20px;
-        height: 2px;
-        background: var(--accent-color);
         } 
-
-    .problems_exeption{
-        @media screen and (max-width: 767px){
-        padding-top: 20px;
-        }
-}
-
-    .problems_list__text{
-    @include font(700, 14px, 1.428, $ls: 0.08em);
-    padding-left: 30px;
-    display: block;
-    color: var(--main-color);
-    // outline: 2px solid teal;
-
-
-    @media screen and (min-width: 768px){
-    @include font(700, 14px, 1.714, $ls: 0.08em); 
-    // text-align: start;
-    //    max-width: 236px;
-    }
-   
-    @media screen and (min-width: 1366px){
-    @include font(700, 20px, 1.4, $ls: 0.08em);
-    // max-width: 336px;
-    }
-    }
     
+    
+    .problems_list__item {
+    
+        @media screen and (min-width: 768px) and (max-width: 1365px){ 
+            width: 270px;
+        }
+    
+        @media screen and (min-width: 1366px){ 
+            width: 360px;
+            padding-right: 40px;
+        }
+        }  
+    
+    
+        .problems_list__item:nth-child(3n +3){
+    
+            @media screen and (min-width: 1366px){
+                padding-right: 0px;
+            }
+           
+        }
+    
+    
+    
+        .exeption__prepare{
+    
+            @media screen and (max-width: 767px){
+            width: 150px;
+            }
+    
+            @media screen and (min-width: 768px) and (max-width: 1365px){ 
+            width: 200px;    
+          
+            }
+        }
+    
+    
+    
+    .problems_list__item:nth-child(2n + 1) {
+        @media screen and (min-width: 768px) and (max-width:1365px){ 
+            padding-right: 22px;
+        }
+        }
+    
+     .problems_list__title{
+        @include font(700, 20px, 1.2, $ls: 0.08em);
+        position: relative;
+        color: var(--accent-color);
+        
+    
+        @media screen and (max-width: 767px){
+        padding-top: 10px;
+        margin-bottom: 5px;
+        padding-left: 61px;
+       
+        }
+    
+        @media screen and (min-width: 768px){
+            padding-left: 30px;
+            margin-bottom: 5px;
+        }
+    
+    
+        @media screen and (min-width: 1366px){
+        @include font(700, 20px, 1.65, $ls: 0.08em);
+        margin-bottom: 10px;
+        }
+        }
+        
+    
+        .problems_list__title::after{
+            position: absolute;
+            display: inline-block;
+            content: '';
+            bottom: 12px;
+            left: 30px;
+            width: 20px;
+            height: 2px;
+            background: var(--accent-color);
+    
+            @media screen and (min-width: 768px){
+                bottom: 11px;
+                left: 0px;
+            }
+              
+            @media screen and (min-width: 1366px){
+                bottom: 16px;
+            }
+            } 
+    
+    
+        .problems_exeption{
+            @media screen and (max-width: 767px){
+            padding-top: 20px;
+            }
+            }
+    
+    
+        .problems_list__text{
+        @include font(700, 14px, 1.428, $ls: 0.08em);
+        color: var(--main-color);
+    
+        @media screen and (max-width: 767px){
+        padding-left: 30px;
+        }
+    
+        @media screen and (min-width: 768px){
+        @include font(700, 14px, 1.714, $ls: 0.08em); 
+        }
+       
+        @media screen and (min-width: 1366px){
+        @include font(700, 20px, 1.4, $ls: 0.08em);
+        }
+        }
+        
