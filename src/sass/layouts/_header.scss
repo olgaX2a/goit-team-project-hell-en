@@ -6,7 +6,11 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.logo.mobile {
+  color: #ffffff;
+  position: relative;
+  z-index: 5;
+}
 .header__menu-button {
   display: flex;
   justify-content: center;
@@ -24,6 +28,8 @@
   align-items: center;
   width: 20px;
   height: 20px;
+  position: relative;
+  z-index: 5;
 }
 .header__menu-button .header__menu-button--icon-cross {
   display: none;
@@ -35,24 +41,12 @@
   display: flex;
   justify-content: space-between;
 }
-// .header__menu-button.is-open .header__menu-button--icon-menu {
-//   display: none;
-// }
-.header__menu-button--icon-menu {
-  width: 20px;
-  height: 12px;
-  fill: #000000;
-}
+
 .header__menu-button--icon-cross {
   width: 15px;
   height: 15px;
-  fill: #000000;
-}
-
-.menu-container.is-open .header__menu-button--icon-cross {
-  position: absolute;
   fill: #ffffff;
-  z-index: 100;
+  position: absolute;
 }
 
 .header__site-nav--link {
