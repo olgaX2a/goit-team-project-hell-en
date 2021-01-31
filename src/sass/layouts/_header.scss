@@ -6,7 +6,11 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.logo.mobile {
+  color: #ffffff;
+  position: relative;
+  z-index: 5;
+}
 .header__menu-button {
   display: flex;
   justify-content: center;
@@ -24,6 +28,8 @@
   align-items: center;
   width: 20px;
   height: 20px;
+  position: relative;
+  z-index: 5;
 }
 .header__menu-button .header__menu-button--icon-cross {
   display: none;
@@ -35,24 +41,12 @@
   display: flex;
   justify-content: space-between;
 }
-// .header__menu-button.is-open .header__menu-button--icon-menu {
-//   display: none;
-// }
-.header__menu-button--icon-menu {
-  width: 20px;
-  height: 12px;
-  fill: #000000;
-}
+
 .header__menu-button--icon-cross {
   width: 15px;
   height: 15px;
-  fill: #000000;
-}
-
-.menu-container.is-open .header__menu-button--icon-cross {
-  position: absolute;
   fill: #ffffff;
-  z-index: 100;
+  position: absolute;
 }
 
 .header__site-nav--link {
@@ -79,6 +73,11 @@
     margin-top: 50px;
     margin-bottom: 50px;
   }
+  .contact__btn--light-theme.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 1365px) {
@@ -98,11 +97,15 @@
 
     background-color: rgba(17, 21, 24, 0.9);
 
-    text-align: center;
-
     &.is-open {
       display: block;
     }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .header__site-nav-list {
+    margin: 0 auto;
+    max-width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -118,10 +121,8 @@
     margin-left: 200px;
     margin-right: 44px;
   }
-  .header__site-nav-list {
-    margin-left: 218px;
-    margin-right: 218px;
-    text-align: left;
+
+  .header__site-nav {
     margin-top: 72px;
   }
 }
