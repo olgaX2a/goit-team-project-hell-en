@@ -92,11 +92,15 @@
 
     background-color: rgba(17, 21, 24, 0.9);
 
-    text-align: center;
-
     &.is-open {
       display: block;
     }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .header__site-nav-list {
+    margin: 0 auto;
+    max-width: 320px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -112,10 +116,8 @@
     margin-left: 200px;
     margin-right: 44px;
   }
-  .header__site-nav-list {
-    margin-left: 218px;
-    margin-right: 218px;
-    text-align: left;
+
+  .header__site-nav {
     margin-top: 72px;
   }
 }
