@@ -88,6 +88,8 @@
          @media screen and (min-width:1366px) {
 
              .program .container{
+                 position: relative;
+                 display: block;
                  height: 918px;
              }
             
@@ -443,17 +445,16 @@ height: 137px;
 @media screen and (min-width:1366px) {
 
     background-image: url('/images/registration/desk.jpg');
-    width: 672px;
+    width: 760px;
     // max-width: 510px;
     height: 502px;
     margin-bottom: 0px;
     bottom: -140px;
     right: 0px;
-    left: 0px;
+    left: -157px;
     background-size: cover;   
     padding-right: 0px;
     padding-left: 0px;
-    background-position: right;
 }
 
 @media screen and (min-width:1680px) {
