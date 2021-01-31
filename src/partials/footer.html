@@ -1,2 +1,61 @@
 <!-- названия классов называем по типу footer__элемент--модификатор -->
-<footer class="footer" id="footer"></footer>
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="logo__wrapper">
+        <a class="logo list link" lang="en" href="./index.html"
+          >Hell
+          <svg class="logo__icon">
+            <use href="./images/sprite.svg#campfire"></use>
+          </svg>
+          EN<span class="logo-english">
+            <span class="logo-english-accent">Адский</span> английский</span
+          >
+        </a>
+      </div>
+      <ul class="footer-top__contact list">
+        <li class="footer-top__contact-list-item">
+          <a
+            href="tel:+380000000000"
+            class="footer-top__contact-list-link link"
+          >
+            <svg class="footer-top__icon-phone">
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+            +38 (000) 000 00 00</a
+          >
+        </li>
+        <li class="footer-top__contact-list-item">
+          <a href="" class="footer-top__contact-list-link">
+            <picture>
+              <source
+                srcset="
+                  ./images/social-media/instagram/instagram.webp    1x,
+                  ./images/social-media/instagram/instagram@2x.webp 2x
+                "
+                media="(min-width: 320px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/social-media/instagram/instagram.jpg    1x,
+                  ./images/social-media/instagram/instagram@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                src="./images/social-media/instagram/instagram.jpg"
+                alt="Instagram"
+                width="40"
+                height="40"
+              />
+            </picture>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-bottom__text">@ Все права защищены, 2019</p>
+    </div>
+  </div>
+</footer>
