@@ -3,28 +3,52 @@
 .problems{
     padding-top: 50px;
     padding-bottom: 50px;
-    background-image: url('/images/problems/fon-mob.jpg');
-    background-repeat: no-repeat;
-    background-size: 6000px 525px;
-    
+    position: relative;
+    display: block;
+    background: var( --main-color);
+
     @media screen and (min-width: 768px){
     padding-top: 60px;
     padding-bottom: 50px;
-    background-image: url('/images/problems/fon-tablet.jpg');
-    background-size: 6000px 340px;
+    
     }
     
     @media screen and (min-width: 1366px) {
         padding-top: 100px;
         padding-bottom: 130px;
-        background-image:url('/images/problems/fon-desktop.jpg');
-        background-size: 6000px 560px;
-    
-        position: relative;
-      
+        
     }
     }
     
+
+ .problems .container{
+     display: block;
+     position: relative;
+}
+
+    .problems::after{
+        position: absolute;
+        content: "";
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+        height: 198px;
+       
+        background: var(--white-color);
+
+
+
+        @media screen and (min-width: 768px){
+            height: 201px;
+        }
+
+        @media screen and (min-width: 1366px){
+            height: 280px;
+        }
+
+    }
+
+
     
     .problems__title{
         @include font(800, 20px, 1.35, $ls: 0.03em);
@@ -45,10 +69,10 @@
     
     .fon-fire{
         @media screen and (min-width: 1366px) {
-            width: 399px;
+            width: 455px;
             height: 472px;
-            bottom: 280px;
-            right: 0px;
+            bottom: 150px;
+            left:1030px;
             position: absolute;
             background-image:url('/images/problems/fon-fire.png');
             background-repeat: no-repeat;
@@ -66,7 +90,9 @@
         height: 488px; 
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
         background:var(--white-color);
-       
+        position: relative;
+        z-index:100;
+
         @media screen and (min-width: 768px){
             width: 688px;
             height: 303px; 
@@ -85,8 +111,8 @@
             padding-top: 70px;
             padding-bottom: 62px;
             padding-left: 113px;
-            position: relative;
-            z-index:100;
+         
+            
         }
         } 
     
