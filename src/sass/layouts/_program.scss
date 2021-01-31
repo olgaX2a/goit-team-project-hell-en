@@ -97,8 +97,8 @@
 
 .program{
     background-color: var(--main-color);
-    max-width: 1680px;
-    margin: 0 auto;
+    // max-width: 1680px;
+    // margin: 0 auto;
 
     @media screen and (min-width:1366px) {
 
@@ -450,8 +450,8 @@ height: 137px;
     height: 502px;
     margin-bottom: 0px;
     bottom: -140px;
-    right: 0px;
-    left: -157px;
+    right: 824px;
+    background-position: right;
     background-size: cover;   
     padding-right: 0px;
     padding-left: 0px;
