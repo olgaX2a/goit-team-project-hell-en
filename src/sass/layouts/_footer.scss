@@ -12,10 +12,6 @@
   .container {
     padding-left: 0px;
     padding-right: 0px;
-
-    @media screen and (max-width: 1680px) {
-      max-width: 1680px;
-    }
   }
 }
 
@@ -35,14 +31,10 @@
   }
 
   @media screen and (min-width: 1366px) {
-    margin-left: 120px;
+    margin-left: 157px;
     padding-bottom: 52px;
     margin-right: 0;
     justify-content: start;
-  }
-
-  @media screen and (min-width: 1680px) {
-    margin-left: 183px;
   }
 
   &__contact {
@@ -119,11 +111,7 @@
   }
 
   @media screen and (min-width: 1366px) {
-    margin-right: 190px;
-  }
-
-  @media screen and (min-width: 1680px) {
-    margin-right: 290px;
+    margin-right: 281px;
   }
 
   .logo,
@@ -144,11 +132,7 @@
   }
 
   @media screen and (min-width: 1366px) {
-    padding-left: 120px;
-  }
-
-  @media screen and (min-width: 1680px) {
-    padding-left: 183px;
+    padding-left: 157px;
   }
 
   &__text {

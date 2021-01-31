@@ -103,6 +103,7 @@
     border: 1px solid #ffffff;
     box-sizing: border-box;
     color: #ffffff;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px) {
       min-width: 390px;
@@ -113,6 +114,11 @@
       padding-top: 23px;
       padding-bottom: 23px;
       padding-left: 40px;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--accent-color);
     }
 
     &::placeholder {
