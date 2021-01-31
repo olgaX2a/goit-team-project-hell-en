@@ -2,10 +2,12 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background-image: url(../images/hero/shadow/hero_shadow-tab.svg);
-  background-repeat: no-repeat;
+ background-position: -74px 6px;
   box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-  background-position: -74px 6px;
- }
+  // background-repeat: no-repeat;
+  // -webkit-filter: drop-shadow -5px 21px 26px rgba(0, 0, 0, 0.04);
+  // filter: drop-shadow -5px 21px 26px rgba(0, 0, 0, 0.04);
+   }
 
 .hero__title {
   font-family: var(--main-font);
@@ -50,7 +52,7 @@
     padding-top: 70px;
     padding-bottom: 64px;
 
-    background-position: 3px -93px;
+    background-position: bottom;
     
   }
   .hero__left-side {
