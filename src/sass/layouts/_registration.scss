@@ -77,20 +77,19 @@
     align-items: center;
   }
 
-  &__field:first-child {
-    margin-bottom: 20px;
-    @media screen and (min-width: 1366px) {
-      margin-bottom: 30px;
-    }
-  }
+  &__field {
+    position: absolute;
+    top: 15px;
+    left: 28px;
+    @include font(600, 14px, 1.214);
+    color: #ffffff;
 
-  &__field:last-child {
-    margin-bottom: 50px;
-    @media screen and (min-width: 768px) {
-      margin-bottom: 30px;
-    }
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (min-width: 1366px) {
-      margin-bottom: 80px;
+      top: 23px;
+      left: 40px;
+      @include font(600, 20px, 1.2);
     }
   }
 
@@ -120,17 +119,39 @@
       outline: none;
       border-color: var(--accent-color);
     }
+  }
 
-    &::placeholder {
-      @include font(600, 14px, 1.214);
-      color: #ffffff;
-      @media screen and (min-width: 1366px) {
-        @include font(600, 20px, 1.2);
-      }
+  .contact__btn--dark-theme {
+    display: block;
+  }
+}
+
+.wrapper-input {
+  position: relative;
+
+  &:first-child {
+    margin-bottom: 20px;
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 30px;
+    }
+  }
+  &:last-child {
+    margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 80px;
     }
   }
 }
 
-.registration .contact__btn--dark-theme {
-  display: block;
+.registration__input:focus + .registration__field,
+.registration__input:not(:placeholder-shown) + .registration__field {
+  color: var(--accent-color);
+  transform: translateY(-34px);
+
+  @media screen and (min-width: 1366px) {
+    transform: translateY(-50px);
+  }
 }
