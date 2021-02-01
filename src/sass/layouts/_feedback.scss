@@ -1,6 +1,6 @@
 .feedback {
-    padding-bottom: 54px;
-    padding-top: 130px;
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
   .feedback__heading {
     margin-bottom: 20px;
@@ -230,6 +230,10 @@
   
   
   @media screen and (min-width: 768px) {
+    .feedback {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
     .feedback__list-item.slick-slide {
         display: flex;
     }
@@ -287,6 +291,10 @@
   
   
   @media screen and (min-width: 1366px) {
+    .feedback {
+      padding-bottom:130px;
+      padding-top:130px;
+    }
     .feedback__heading {
         margin-bottom: 50px;
         font-size: 46px;

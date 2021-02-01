@@ -101,6 +101,11 @@ line-height: 1.2;
         margin-bottom: 20px;
     }
 }
+@media screen and (min-width: 768px) {
+    .container-bcg .features_item {
+        margin-bottom: 0;
+    }
+}
 
 @media screen and (min-width:320px) and (max-width:767px) {
 

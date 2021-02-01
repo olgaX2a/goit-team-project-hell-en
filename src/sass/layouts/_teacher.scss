@@ -1,5 +1,5 @@
 .teacher__container {
-    padding-top: 270px;
+    padding-top: 39px;
     margin-bottom: 50px;
 }
         
@@ -93,7 +93,7 @@
         font-size: 26px;
     }
     .teacher__container {
-        padding-top: 302px;
+        padding-top: 140px;
     }
     .teacher__achievements-description {
         @include font(600, 14px, 1.22, 0.06);
@@ -111,7 +111,7 @@
 
 @media screen and (min-width: 1366px) {
     .teacher__container {
-        padding-top: 329px;
+        padding-top: 162px;
         margin-bottom: 130px;
     }
     .teacher__main-heading {
