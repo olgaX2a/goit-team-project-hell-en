@@ -114,9 +114,10 @@
             transform: translate3d(0, 0, 0);
   }
   
-  // .slick-list .slick-track {
-  //     width: 182px;
-  // }
+  .slick-list .slick-track {
+      width: 182px;
+      margin: 0 auto;
+  }
   .slick-track {
     position: relative;
     top: 0;
@@ -198,27 +199,25 @@
   .girl__photo-nav {
     width: 54px;
     height: 54px;
-    margin-right: 10px;;
+    margin-right: 5px;
+    margin-left: 3px;
   }
   
   
   
   //мои настройки
-  
   .bottom-nav {
     margin: 0 auto;
     width:182px;
     height: 54px;
   }
-  .photo-nav {
-    margin-right: 10px;
-  }
   .bottom-nav-container {
-    // max-width: 182px;
     margin: 0 auto;
     justify-content: center;
-    // padding-right: 30px;
-    // padding-left: 30px;
+  }
+  .feedback__list-item {
+    margin-right: 10px;
+    margin-left: 10px;
   }
   
   
@@ -242,20 +241,18 @@
         font-size: 26px;
     }
     .bottom-nav {
+      margin-left: 200px; ///????
         width: 558px;
         height: 60px;
     }
     .photo-nav {
-        height: 60px;
+      margin-right: 5px;
+      margin-left: 5px;
+      height: 60px;
     }
-    .photo-nav:last-child {
-        margin-right: 0;
-       
-        width: 54px;
-    }
+    
     .cards-list {
-        
-        width: 688px;
+      width: 688px;
     }
     .feedback__list-item {
         display: flex;
@@ -263,6 +260,7 @@
         padding-right: 40px;
         padding-bottom: 40px;
         padding-left: 40px;
+
     }
   
     .card__left-side {
@@ -317,5 +315,8 @@
     .girl__feedback {
         font-size: 18px;
         line-height: 1.56;
+    }
+    .bottom-nav { ///????
+      margin-left: 430px; 
     }
   }

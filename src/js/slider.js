@@ -12,6 +12,7 @@ $('.bottom-nav').slick({
   dots: false,
   centerMode: false,
   arrows: true,
+  variableWidth: true,///
   focusOnSelect: true,
   responsive: [
     {
