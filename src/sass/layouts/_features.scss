@@ -15,13 +15,34 @@
 
 }
 
+@media screen and(min-width:320px) and (max-width:767px){
+
+    .features {
+        position: relative;
+        display: block;
+
+        &::after {
+            position: absolute;
+            display: block;
+            content: "";
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 240px;
+            background-color: white;
+            z-index: 1000;
+        }
+    }
+}
+
+
 .features{
     background-color: var(--main-color) ;
 
     @media screen and (min-width:768px) {
 
         background: linear-gradient(to bottom, #111518 0%, #111518 54%, white 54%, white 100%);
-        height: 325px;
+        height: 365px;
         // max-width: 1680px;
         // margin: 0 auto;
         // padding-bottom: 130px;
@@ -81,9 +102,21 @@ line-height: 1.2;
     }
 }
 
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    .container-features {
+    position: relative;
+    display: block;
+    z-index: 1050;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    }
+
+}
+
+
 .container-features {
     width: 280px;
-    height: 422px;
+    height: 660px;
     padding-top: 20px;
     padding-bottom: 15px;
     padding-right: 14px;
@@ -93,11 +126,12 @@ line-height: 1.2;
     @media screen and(min-width:768px) {
 
     width: 688px;
-    height: 133px;
+    height: 394px;
     padding-top: 30px;
     padding-bottom: 25px;
     padding-right: 118px;
     padding-left: 98px;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     }
 
     @media screen and(min-width:1366px) {
@@ -109,13 +143,20 @@ line-height: 1.2;
     padding-right: 84px;
     padding-left: 82px;
     position: absolute;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     // z-index: 100;
+    }
+}
+
+@media screen and(min-width:768px) and (max-width:1365px) {
+    .container-full {
+        padding-bottom: 50px;
     }
 }
 
 .features_list{
     width: 236px;
-    padding-bottom: 59px;
+    // padding-bottom: 59px;
 
     @media screen and (min-width:768px) {
         width: 472px;
@@ -127,7 +168,7 @@ line-height: 1.2;
        width: 1148px;
        display: flex;
        justify-content: space-between;
-       padding-bottom: 130px;
+    //    padding-bottom: 130px;
     //    flex-wrap: wrap;
     }
 }
@@ -144,7 +185,7 @@ line-height: 1.2;
     .container-bcg {
         width: 472px;
         display: flex;
-        padding-bottom: 70px;
+        // padding-bottom: 70px;
     }
 }
 
