@@ -26,8 +26,6 @@ $('.bottom-nav').slick({
     {
       breakpoint: 768,
       settings: {
-        arrows: true,
-        centerMode: false,
         slidesToShow: 3
       }
     }
