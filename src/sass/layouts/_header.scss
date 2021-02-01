@@ -57,6 +57,12 @@
   letter-spacing: 0.03em;
 
   color: #ffffff;
+  transition: color 250ms var(--timing);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .header__site-nav--link.current {
   color: var(--accent-color);
