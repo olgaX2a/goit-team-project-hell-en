@@ -1,5 +1,5 @@
 // задать стили кнопкам с классами contact__btn--light-theme и contact__btn--dark-theme
-.contact__btn--light-theme {  
+.contact__btn--light-theme {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 12px;
@@ -14,8 +14,16 @@
   padding: 14px 10px;
   margin: 0 auto;
   border: 2px solid #ff6b09;
+
+  transition: background-color 250ms var(--timing), color 250ms var(--timing);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
 }
-.contact__btn--dark-theme {  
+.contact__btn--dark-theme {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 12px;
@@ -30,13 +38,20 @@
   padding: 14px 10px;
   margin: 0 auto;
   border: 2px solid #ff6b09;
+
+  transition: background-color 250ms var(--timing), color 250ms var(--timing);
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: var(--accent-color);
+  }
 }
 @media screen and (min-width: 1366px) {
   .contact__btn--light-theme {
     min-width: 336px;
     font-size: 14px;
     line-height: 1.21;
-   
   }
   .contact__btn--dark-theme {
     // min-width: 354px;
