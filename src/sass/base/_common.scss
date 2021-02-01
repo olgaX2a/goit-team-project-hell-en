@@ -34,9 +34,21 @@ img {
 body {
   font-family: var(--main-font);
   font-style: normal;
+  background-image: url(../images/hero/shadow/hero_shadow-tab.svg);
+  background-position: -86px 67px;
+  background-repeat: no-repeat;
+  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+}
+@media screen and (min-width: 768px) {
+  body {
+    
+    background-position: -15px 5px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  body {
+    background-image: url(../images/hero/shadow/hero_shadow.svg);
+    background-position: -1px -18px;
+  }
 }
 
-body {
-  font-family: var(--main-font);
-  font-style: normal;
-}
