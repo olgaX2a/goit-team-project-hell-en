@@ -1,8 +1,9 @@
 :root {
-  --main-font: "Montserrat", sans-serif;
+  --main-font: 'Montserrat', sans-serif;
   --main-color: #111518;
   --secondary-color: #b9b9b9;
   --accent-color: #ff6b09;
   --teacher-color: #3d3d3d;
-  --white-color:#ffffff;
+  --white-color: #ffffff;
+  --timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
