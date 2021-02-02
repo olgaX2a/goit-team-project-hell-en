@@ -11,14 +11,18 @@
 .feedback__list-item {
   display: block;
   width: 280px;
-  padding-top: 20px;
-  padding-right: 20px;
-  margin-bottom: 30px;
-  padding-left: 20px;
+  padding: 20px 20px 30px 20px;
   text-align: center;
   background-color: #fff;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  @media screen and (min-width: 768px) {
+    padding: 40px;
+  }
+  @media screen and (min-width: 1366px) {
+    padding: 50px 112px 50px 82px;
+  }
 }
+
 .feedback__pic {
   width: 90px;
   height: 90px;
@@ -51,13 +55,7 @@
 .girl__icon {
   width: 30px;
   height: 17px;
-}
-.girl__icon-item {
-  width: 30px;
-  height: 17px;
   fill: #436eab;
-  display: block;
-  align-items: flex-start;
 }
 
 .girl__social-link {
@@ -87,113 +85,19 @@
 }
 
 .cards-list {
-  width: 280px;
-  margin: 0 auto;
-}
-
-/* Slider */
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list {
-  position: relative;
-
-  display: block;
-  overflow: hidden;
-
-  margin: 0;
-  padding: 0;
-}
-.slick-list:focus {
-  outline: none;
-}
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-list .slick-track {
-  width: 182px;
-  margin: 0 auto;
-}
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-
-  display: block;
+  margin-top: 0;
+  margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1366px) {
+    margin-bottom: 40px;
+  }
 }
 
-.slick-track:before,
-.slick-track:after {
-  display: table;
-
-  content: '';
-}
-.slick-track:after {
-  clear: both;
-}
-.slick-loading .slick-track {
-  visibility: hidden;
-}
-.slick-slide {
-  display: none;
-  float: left;
-
-  height: 100%; //
-  min-height: 1px;
-}
-[dir='rtl'] .slick-slide {
-  float: right;
-}
-.slick-slide img {
-  display: block;
-}
-.slick-slide.slick-loading img {
-  display: none;
-}
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-.slick-initialized .slick-slide {
-  display: block;
-}
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-.slick-vertical .slick-slide {
-  display: block;
-  height: 54px;
-  border: 1px solid transparent;
-}
-// .slick-arrow.slick-hidden {
-//     display: none;
-// }
 .slick-prev::before {
-  //поставила левую стрелку место?
   content: '';
   position: absolute;
   background-image: url(../images/arrow-left.svg);
@@ -202,10 +106,15 @@
   height: 15px;
 
   left: -60%;
-  top: -10%;
+  top: 0;
+  @media screen and (min-width: 768px) {
+    left: 0px;
+  }
+  @media screen and (min-width: 1366px) {
+    left: -60px;
+  }
 }
 .slick-next::before {
-  //поставила правую стрелку место?
   content: '';
   position: absolute;
   background-image: url(../images/arrow-right.svg);
@@ -213,9 +122,11 @@
   contain: contain;
   width: 30px;
   height: 15px;
-
-  left: -4%;
-  top: -10%;
+  right: -60%;
+  top: 0;
+  @media screen and (min-width: 1366px) {
+    right: -60px;
+  }
 }
 .girl__photo-nav {
   display: flex;
@@ -225,24 +136,8 @@
   overflow: hidden;
   width: 54px;
   height: 54px;
-  // margin: 0 auto;
   margin-right: 5px;
   margin-left: 5px;
-}
-
-//мои настройки
-.bottom-nav {
-  margin: 0 auto;
-  width: 182px;
-  height: 54px;
-}
-.bottom-nav-container {
-  margin: 0 auto;
-  justify-content: center;
-}
-.feedback__list-item {
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -258,25 +153,17 @@
     font-size: 26px;
   }
   .bottom-nav {
-    margin-left: 120px; ///????
+    margin-left: auto;
+    margin-right: auto;
     width: 558px;
-    height: 60px;
   }
   .photo-nav {
-    margin-right: 5px;
-    margin-left: 5px;
-    height: 60px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
   .cards-list {
     width: 688px;
-  }
-  .feedback__list-item {
-    display: flex;
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
   }
 
   .card__left-side {
@@ -301,14 +188,6 @@
   .girl__feedback {
     text-align: left;
   }
-  .slick-prev::before {
-    //поставила левую стрелку место?
-    left: 0;
-  }
-  .slick-next::before {
-    //поставила правую стрелку место?
-    left: -30px;
-  }
 }
 
 @media screen and (min-width: 1366px) {
@@ -323,12 +202,6 @@
   .cards-list {
     width: 1090px;
   }
-  .feedback__list-item {
-    padding-top: 50px;
-    padding-right: 112x;
-    padding-bottom: 50px;
-    padding-left: 82px;
-  }
   .girl__name {
     margin-bottom: 10px;
     font-size: 30px;
@@ -341,11 +214,29 @@
     line-height: 1.56;
   }
   .bottom-nav {
-    ///????
     margin-left: 430px;
   }
-  .slick-next::before {
-    //поставила правую стрелку место?
-    left: 30px;
+}
+
+//мои настройки
+.bottom-nav {
+  margin: 0 auto;
+  width: 192px;
+  height: 54px;
+  @media screen and (min-width: 768px) {
+    width: 590px;
   }
+}
+.bottom-nav-container {
+  margin: 0 auto;
+  justify-content: center;
+}
+.feedback__list-item {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.girl__photo-nav.slick-current {
+  outline: none;
+  border: 2px solid var(--accent-color);
 }
