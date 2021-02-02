@@ -1,9 +1,17 @@
       $('.cards-list').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
+  arrows: true,
   fade: true,
-  asNavFor: '.bottom-nav'
+  asNavFor: '.bottom-nav',
+  responsive: [
+    {
+      breakpoint: 320,
+      settings: {
+        arrows: false,
+      }
+    }
+  ]
 });
 $('.bottom-nav').slick({
   slidesToShow: 7,
@@ -18,8 +26,6 @@ $('.bottom-nav').slick({
     {
       breakpoint: 768,
       settings: {
-        arrows: true,
-        centerMode: false,
         slidesToShow: 3
       }
     }

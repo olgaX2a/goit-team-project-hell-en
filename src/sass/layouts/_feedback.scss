@@ -184,7 +184,7 @@
     left: -60%;
     top: -10%;
   }
-  .slick-next::before {//поставила левую стрелку место?
+  .slick-next::before {//поставила правую стрелку место?
     content:'';
     position: absolute;
     background-image: url(../images/arrow-right.svg);
@@ -241,7 +241,7 @@
         font-size: 26px;
     }
     .bottom-nav {
-      margin-left: 200px; ///????
+      margin-left: 120px; ///????
         width: 558px;
         height: 60px;
     }
@@ -285,6 +285,12 @@
     .girl__feedback {
         text-align: left;
     }
+    .slick-prev::before {//поставила левую стрелку место?
+      left: 0;
+    }
+    .slick-next::before {//поставила правую стрелку место?
+      left: -30px;
+    }
   }
   
   
@@ -318,5 +324,8 @@
     }
     .bottom-nav { ///????
       margin-left: 430px; 
+    }
+    .slick-next::before {//поставила правую стрелку место?
+      left: 30px;
     }
   }
