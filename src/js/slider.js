@@ -2,16 +2,30 @@
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
-  fade: true,
+  // prevArrow: '<div class="prev"></div>',
+  // nextArrow: '<div class="next"></div>',
   asNavFor: '.bottom-nav',
-  responsive: [
+  mobileFirst:true,
+    responsive: [
     {
-      breakpoint: 320,
+      breakpoint: 1365,
+        settings: {
+        arrows: true,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        arrows: true,
+      }
+    },
+    {
+      breakpoint: 319,
       settings: {
         arrows: false,
       }
     }
-  ]
+  ],
 });
 $('.bottom-nav').slick({
   slidesToShow: 7,
@@ -20,14 +34,36 @@ $('.bottom-nav').slick({
   dots: false,
   centerMode: false,
   arrows: true,
-  variableWidth: true,///
+  // prevArrow: '<div class="prev"></div>',
+  // nextArrow: '<div class="next"></div>',
+  variableWidth: true,
   focusOnSelect: true,
+  mobileFirst: true,
+  
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1365,
       settings: {
-        slidesToShow: 3
+        arrows: false,
+        slidesToShow: 7,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        arrows: false,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 319,
+      settings: {
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
       }
     }
-  ]
+  ],
 });

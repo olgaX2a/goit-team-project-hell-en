@@ -2,6 +2,12 @@
   padding-bottom: 50px;
   padding-top: 50px;
 }
+.feedback .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .feedback__heading {
   margin-bottom: 20px;
   text-align: center;
@@ -11,14 +17,18 @@
 .feedback__list-item {
   display: block;
   width: 280px;
-  padding-top: 20px;
-  padding-right: 20px;
-  margin-bottom: 30px;
-  padding-left: 20px;
+  padding: 20px 20px 30px 20px;
   text-align: center;
   background-color: #fff;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  @media screen and (min-width: 768px) {
+    padding: 40px;
+  }
+  @media screen and (min-width: 1366px) {
+    padding: 50px 112px 50px 82px;
+  }
 }
+
 .feedback__pic {
   width: 90px;
   height: 90px;
@@ -87,8 +97,16 @@
 }
 
 .cards-list {
-  width: 280px;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1366px) {
+    margin-bottom: 40px;
+  }
 }
 
 /* Slider */
@@ -202,7 +220,13 @@
   height: 15px;
 
   left: -60%;
-  top: -10%;
+  top: 0;
+  @media screen and (min-width: 768px) {
+    left: 0px;
+  }
+  @media screen and (min-width: 1366px) {
+    left: -60px;
+  }
 }
 .slick-next::before {
   //поставила правую стрелку место?
@@ -213,9 +237,11 @@
   contain: contain;
   width: 30px;
   height: 15px;
-
-  left: -4%;
-  top: -10%;
+  right: -60%;
+  top: 0;
+  @media screen and (min-width: 1366px) {
+    right: -60px;
+  }
 }
 .girl__photo-nav {
   display: flex;
@@ -301,14 +327,6 @@
   .girl__feedback {
     text-align: left;
   }
-  .slick-prev::before {
-    //поставила левую стрелку место?
-    left: 0;
-  }
-  .slick-next::before {
-    //поставила правую стрелку место?
-    left: -30px;
-  }
 }
 
 @media screen and (min-width: 1366px) {
@@ -344,8 +362,8 @@
     ///????
     margin-left: 430px;
   }
-  .slick-next::before {
-    //поставила правую стрелку место?
-    left: 30px;
-  }
+  // .slick-next::before {
+  //   //поставила правую стрелку место?
+  //   left: 30px;
+  // }
 }
