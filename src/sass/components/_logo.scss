@@ -12,6 +12,8 @@
   width: 14px;
   height: 19px;
   fill: #ff6b09;
+  margin-left: -1px;
+  margin-right: -1px;
 }
 .logo-english {
   position: absolute;
@@ -35,8 +37,8 @@
   .logo__icon {
     width: 22px;
     height: 30px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: -6px;
+    margin-right: -6px;
   }
   .logo-english {
     font-size: 8px;
@@ -44,7 +46,6 @@
     top: 37px;
   }
   .logo-english-accent {
-      
-      color: var(--accent-color);
-    }
+    color: var(--accent-color);
+  }
 }
