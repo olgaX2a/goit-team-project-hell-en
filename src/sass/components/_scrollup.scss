@@ -15,4 +15,8 @@
     fill: var(--accent-color);
     opacity: 1;
   }
+  @media screen and (max-width: 767px) {
+    bottom: 25px;
+    right: 25px;
+  }
 }
