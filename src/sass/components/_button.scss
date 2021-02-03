@@ -13,7 +13,7 @@
   min-width: 259px;
   padding: 14px 10px;
   margin: 0 auto;
-  border: 2px solid #ff6b09;
+  border: 2px solid var(--accent-color);
 
   transition: background-color 250ms var(--timing), color 250ms var(--timing);
 
@@ -37,7 +37,7 @@
   min-width: 259px;
   padding: 14px 10px;
   margin: 0 auto;
-  border: 2px solid #ff6b09;
+  border: 2px solid var(--accent-color);
 
   transition: background-color 250ms var(--timing), color 250ms var(--timing);
 
