@@ -39,18 +39,18 @@
 .hero__right-side {
   margin-bottom: 30px;
 }
-.hero-but {
-  color: #ffffff;
-  background-color: var(--accent-color);
+// .hero-but {
+//   color: #ffffff;
+//   background-color: var(--accent-color);
 
-  transition: background-color 250ms var(--timing), color 250ms var(--timing);
+//   transition: background-color 250ms var(--timing), color 250ms var(--timing);
 
-  &:hover,
-  &:focus {
-    background-color: transparent;
-    color: var(--accent-color);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     background-color: transparent;
+//     color: var(--accent-color);
+//   }
+// }
 @media screen and (min-width: 768px) {
   .hero__section {
     padding-top: 70px;

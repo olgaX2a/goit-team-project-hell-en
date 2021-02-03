@@ -22,18 +22,7 @@
   height: 40px;
   background-color: transparent;
 }
-.button-call {
-  color: var(--accent-color);
-  background-color: transparent;
-  
-  transition: background-color 250ms var(--timing), color 250ms var(--timing);
 
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    color: var(--white-color);
-  }
-}
 .header__menu-button--icon {
   display: flex;
   justify-content: center;
@@ -92,9 +81,9 @@
     margin-bottom: 50px;
   }
   .contact__btn--light-theme.mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    max-width: 259px;
+    margin: 0 auto;
   }
 }
 
