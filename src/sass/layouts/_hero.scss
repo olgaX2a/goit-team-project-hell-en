@@ -41,6 +41,7 @@
 }
 .hero-but {
   color: #ffffff;
+  background-color: var(--accent-color);
 
   transition: background-color 250ms var(--timing), color 250ms var(--timing);
 
