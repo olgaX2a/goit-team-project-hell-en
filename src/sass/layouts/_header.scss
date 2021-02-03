@@ -25,6 +25,8 @@
 .button-call {
   color: var(--accent-color);
   background-color: transparent;
+  
+  transition: background-color 250ms var(--timing), color 250ms var(--timing);
 
   &:hover,
   &:focus {

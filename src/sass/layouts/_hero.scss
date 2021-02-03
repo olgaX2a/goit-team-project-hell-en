@@ -42,6 +42,8 @@
 .hero-but {
   color: #ffffff;
 
+  transition: background-color 250ms var(--timing), color 250ms var(--timing);
+
   &:hover,
   &:focus {
     background-color: transparent;
