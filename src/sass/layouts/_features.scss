@@ -26,7 +26,7 @@
       width: 100%;
       height: 240px;
       background-color: white;
-      z-index: 900;
+      z-index: 1000;
     }
   }
 }
@@ -179,24 +179,10 @@
   .features_item {
     width: 236px;
   }
-
-  .container-bcg {
-    width: 472px;
-    display: flex;
-    // padding-bottom: 70px;
-  }
 }
 
 @media screen and (min-width: 1366px) {
   .features_item {
     width: 356px;
-  }
-
-  .container-bcg {
-    width: 750px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    // padding-bottom: 189px;
   }
 }

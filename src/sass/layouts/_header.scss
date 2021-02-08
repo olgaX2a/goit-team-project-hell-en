@@ -22,6 +22,7 @@
   height: 40px;
   background-color: transparent;
 }
+
 .header__menu-button--icon {
   display: flex;
   justify-content: center;
@@ -80,9 +81,9 @@
     margin-bottom: 50px;
   }
   .contact__btn--light-theme.mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    max-width: 259px;
+    margin: 0 auto;
   }
 }
 
