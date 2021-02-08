@@ -18,6 +18,9 @@
     fill: var(--accent-color);
     opacity: 1;
   }
+  @media screen and (max-width: 767px) {
+    right: 25px;
+  }
 }
 
 .messenger-links {
@@ -33,6 +36,9 @@
   &.show {
     transform: scale(1);
     transition: all 250ms var(--timing);
+  }
+  @media screen and (max-width: 767px) {
+    left: 25px;
   }
 }
 
