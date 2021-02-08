@@ -1,0 +1,53 @@
+.messenger {
+  display: block;
+  position: fixed;
+  bottom: 50px;
+  right: 150px;
+  z-index: 1100;
+  /* overflow: hidden; */
+}
+.messenger-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 1100;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    opacity: 1;
+  }
+}
+
+.messenger-links {
+  position: absolute;
+  left: 0px;
+  top: -253px;
+  width: 40px;
+  transform: scale(0);
+  transform-origin: 100% 50%;
+  transition: all 250ms var(--timing);
+  z-index: 1100;
+
+  &.show {
+    transform: scale(1);
+    transition: all 250ms var(--timing);
+  }
+}
+
+.chat-icons {
+  opacity: 0.3;
+  transition: all 250ms var(--timing);
+  z-index: 1100;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    opacity: 1;
+  }
+}
+
+.messenger-links__item:hover,
+.messenger-links__item:focus {
+  transform: scale(1.1);
+}
